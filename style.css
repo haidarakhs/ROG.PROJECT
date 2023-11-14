@@ -229,3 +229,19 @@ margin: 4px;
     color: var(--text-color);
     text-decoration: underline;
 }
+
+
+@media(max-width:1560px){
+    .warning{
+      display: none;
+    }
+  }
+  @media (max-width: 414px) {
+    .warning{
+        display: flex;
+        text-align: center;
+    }
+    main{
+        display: none;
+    }
+}
