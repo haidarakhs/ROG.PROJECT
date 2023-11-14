@@ -22,19 +22,19 @@ section{
 }
 /* header */
 .header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: black;
+    background: rgba(0, 0, 0, 0.024) ;
     display: flex;
     justify-content: space-between;
     align-content: space-between;
     align-items: center;
-    position: fixed;
     z-index: 200;
     text-align: center;
+    
 }
 .navbar a{
     font-size: 1.7rem;
@@ -45,11 +45,6 @@ section{
 .navbar a:hover{
     color: red;
     
-
-}
-.navbar a.active{
-    
-    color:red ;
 
 }
 
@@ -118,3 +113,119 @@ section{
     border-radius: 8rem;
     text-decoration: dashed black;
    }
+
+.text-1{
+    text-align: center;
+    font-size: 200%;
+   
+    margin-top: 15px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.img-1{
+
+  margin-top: 30px;
+
+}
+
+/* product section */
+.img-rog{
+    margin-left: 50px;
+   width: 100px;
+}
+
+.rog{
+    text-align: center;
+    font-size: 40px;
+    border-bottom: red 1px;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.menu-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit , minmax(220px, auto ));
+    grid:1.5rem;
+    align-items: center;
+
+}
+.box{
+    position: relative;
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #feeee7;
+    padding: 20px;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    transition: .4s;
+    
+}
+.box img{
+    width: 200px;
+    height: 200px;
+   
+}
+.box h2{
+    font-size: 1.3rem;
+    color: #000;
+}
+.box h3{
+    font-size: 1.rem;
+    color: #000;
+    font-weight: 400;
+    margin: 4px 0 10px;
+}
+.box span{
+    font-size: #000;
+    font-weight: 600;
+    color: #feeee7;
+}
+.box .bx{
+    background: #000;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    padding: 7px 10px;
+    border-radius: 0 0.5rem 0 0.5rem;
+}
+.service-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto) );
+    grid: 1.5rem;
+    margin-top: 4rem;
+}
+.s-box{
+    text-align: justify;
+    padding: 20px 30px;
+}
+.s-box img{
+width: 90px;
+}
+.s-box h3{
+font-size: 1.2rem;
+color: red;
+margin: 4px;
+}
+.box:hover{
+    transform: scale(1.2) translateY(10px) ;
+}
+.price{
+    margin-top: 3%;
+}
+.button-price{
+    color: black;
+    border-radius: 8rem;
+    font-size: 1.2rem;
+    transition: .5s;
+  
+}
+.button-price{
+    background-color: transparent;
+    color: var(--text-color);
+    text-decoration: underline;
+}
